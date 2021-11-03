@@ -1,0 +1,386 @@
+
+/* 
+ * Default
+ * ******* */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+}
+
+.resize {
+    margin: 2em auto;
+    max-width: 1200px;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+/* 
+ * Navbar
+ * ****** */
+ 
+.title {
+    display: flex;
+    flex-flow: column wrap;
+    height: 70px;
+    background-color: purple;
+    border-bottom: black;
+    border-left: black;
+    border-right: black;
+    border-style: solid;
+}
+
+.doubleitem {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: tomato;
+}
+
+.doubleitem a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 26px 16px;
+    font-style: bold;
+}
+
+.doubleitem a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* 
+ * Header
+ * ****** */
+
+.image {
+    background-image: url(https://imgr.search.brave.com/PNnyLXVbANXB8Ii5DtzwyZ9wSnnkesy4ERYPoOBWKIg/fit/1200/1200/ce/1/aHR0cDovL3d3dy5o/ZHdhbGxwYXBlci5u/dS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/Ny8wNC9jYXQtMTEu/anBn);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonun {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.buttondeux {
+    align-self: center;
+    margin: 0 auto;
+}
+
+/* 
+ * Cartes
+ * ****** */
+
+.headercarte {
+    border-style: solid;
+    border-color: black;
+    background-color: purple;
+    height: 70px;
+}
+
+.headercarte h1 {
+    text-align: center;
+}
+
+.cartes-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    gap: 1%;
+    justify-content: space-around;
+}
+
+.cartes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carteun {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+.cartedeux {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+.cartetrois {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+/* 
+ * Formulaire
+ * ********** */
+
+.titreformulaire {
+    border-style: solid;
+    border-color: black;
+    background-color: purple;
+    height: 70px;
+}
+
+.titreformulaire h1 {
+    text-align: center;
+}
+
+.formulaire {
+    background-color: tomato;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* 
+ * Masonry ou Pinterest
+ * ******************** */
+
+.titremasonry {
+    border-style: solid;
+    border-color: black;
+    background-color: purple;
+    height: 70px;
+}
+
+.titremasonry h1 {
+    text-align: center;
+}
+
+.container-masonry {
+    margin: 2em auto;
+    max-width: 1200px;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.container-masonry h1 {
+    text-align: center;
+}
+.masonry {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -8px;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.masonry-brick {
+    flex: auto;
+    border-radius: 5px;
+    height: 250px;
+    min-width: 150px;
+    margin: 0 0 8px 8px;
+    position: relative;
+}
+
+.masonry-brick:hover .masonry-img {
+    opacity: 0.3;
+}
+
+.masonry-brick:hover .middle {
+    opacity: 1;
+}
+
+.masonry-brick img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.masonry-img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* 
+ * Footer
+ * ****** */
+
+footer {
+    display: flex;
+    box-shadow: 0px -3px 5px black;
+    background-color: tomato;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logofooter {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.logofooter img {
+    max-width: 100%;
+}
+
+.logosponsors {
+    display: flex;
+    flex-direction: row;
+    background-color: tomato;
+}
+
+.logosponsors a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 26px 16px;
+    font-style: bold;
+}
+
+.logosponsors a:hover {
+    background-color: black;
+    color: white;
+}
+
+.col-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* 
+ * Responsive
+ * ********** */
+
+@media screen and (max-width: 800px) {
+    .all {
+        margin: 0 auto;
+    }
+
+/* 
+ * Header responsive
+ * ***************** */
+
+    .image {
+        text-align: center;
+    }
+
+    .image img {
+        height: 100%;
+    }
+
+/* 
+ * Cartes responsive
+ * ***************** */
+
+    .cartes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carteun {
+        margin-bottom: 5px;
+    }
+
+    .cartedeux {
+        margin-bottom: 5px;
+    }
+
+/* 
+ * Formulaire responsive
+ * ********************* */
+
+    .formulaire {
+        display: flex;
+        flex-direction: column;
+    }
+
+/* 
+ * Footer responsive
+ * ***************** */
+
+    footer {
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        align-items: center;
+    }
+
+    .logofooter {
+        text-align: center;
+    }
+}
+
+/*
+ * Chantier 
+ * ******** */
+
+.container {
+    margin: 0 10%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-spacearound {
+    display: flex;
+    justify-content: space-around;
+}
+
+.w-45 {
+    width: 45%
+}
+
+.h-45 {
+    height: 45%;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+.txt-center {
+    text-align: center;
+}

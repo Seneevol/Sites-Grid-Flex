@@ -1,0 +1,421 @@
+/* 
+ * Default
+ * ******* */
+
+nav {
+    grid-area: navbar;
+}
+
+header {
+    grid-area: header;
+}
+
+.cartes {
+    grid-area: cartes;
+}
+
+.masonryall {
+    grid-area: masonry;
+}
+
+.formulaireall {
+    grid-area: formulaire;
+}
+
+footer {
+    grid-area: footer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 9vh 52vh 30vh 130vh 30vh 160px;
+    grid-template-areas: "navbar navbar navbar navbar"
+                         "header header header header"
+                         ". cartes cartes ."
+                         ". masonry masonry ."
+                         ". formulaire formulaire ."
+                         "footer footer footer footer"
+}
+
+/* 
+ * Navbar
+ * ****** */
+
+.title {
+    display: grid;
+    grid-template-rows: 0px;
+    height: 70px;
+    background-color: burlywood;
+    border-bottom: black;
+    border-left: black;
+    border-right: black;
+    border-style: solid;
+}
+
+.doubleitem {
+    margin-left: auto;
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-columns: 80px 80px;
+    background-color: burlywood;
+}
+
+.doubleitem a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 26px 16px;
+    font-style: bold;
+}
+
+.doubleitem a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* 
+ * Header
+ * ****** */
+
+.image {
+    background-image: url(https://imgr.search.brave.com/8TBPuuRK0Bt0GZsS6-Q17s1aRJ5ejqX0qTUHrwOgVfY/fit/1200/1200/ce/1/aHR0cHM6Ly93d3cu/bGFyZWdpb25kdWdv/dXQuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE3LzA3LzQy/Njg5NTc0X2wuanBn);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 75%;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.buttonun {
+    margin: 0 auto;
+}
+
+.buttondeux {
+    margin: 0 auto;
+}
+
+/* 
+ * Cartes
+ * ****** */
+
+.headercarte {
+    border-style: solid;
+    border-color: black;
+    background-color: burlywood;
+    height: 70px;
+}
+
+.headercarte h1 {
+    text-align: center;
+}
+
+.cartes-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+.carte {
+    display: grid;
+    grid-template-rows: 30%;
+    width: 250px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+/* 
+ * Masonry ou Pinterest
+ * ******************** */
+
+.titremasonry {
+    border-style: solid;
+    border-color: black;
+    background-color: burlywood;
+    height: 70px;
+}
+
+.titremasonry h1 {
+    text-align: center;
+}
+
+.container-masonry {
+    margin: 2em 1%;
+    max-width: 1200px;
+}
+
+.container-masonry h1 {
+    text-align: center;
+}
+
+.masonry {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -8px;
+    width: 100%;
+    margin-top: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.masonry-brick {
+    flex: auto;
+    border-radius: 5px;
+    height: 200px;
+    min-width: 100px;
+    margin: 0 0 8px 8px ;
+}
+
+.masonry-brick:hover .masonry-img {
+    opacity: 0.3;
+}
+
+.masonry-brick:hover .middle {
+    opacity: 1;
+}
+
+.masonry-brick img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.masonry-img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(50%);
+
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* 
+ * Formulaire
+ * ********** */
+
+.titreformulaire {
+    border-style: solid;
+    border-color: black;
+    background-color: burlywood;
+    height: 70px;
+}
+
+.titreformulaire h1 {
+    text-align: center;
+}
+
+.formulaire {
+    background-color: gray;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* 
+ * Footer
+ * ****** */
+
+footer {
+    display: grid;
+    box-shadow: 0px -3px 5px black;
+    background-color: burlywood;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-around;
+}
+
+.logofooter {
+    margin-top: 1vh;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.logofooter img {
+    max-width: 100%;
+}
+
+.logosponsors {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: burlywood;
+}
+
+.logosponsors a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 26px 16px;
+    font-style: bold;
+}
+
+.logosponsors a:hover {
+    background-color: black;
+    color: white;
+}
+
+.row-footer {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-around;
+}
+
+/*
+ * Responsive
+ * ********** */
+
+@media screen and (max-width: 1440px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 8vh 52vh 32vh 100vh;
+        grid-template-areas: "navbar"
+                             "header"
+                             "cartes"
+                             "masonry"
+                             "formulaire"
+                             "footer"
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 9vh 57vh 35vh 125vh;
+        grid-template-areas: "navbar navbar"
+                             "header header"
+                             "cartes cartes"
+                             "masonry masonry"
+                             "formulaire formulaire"
+                             "footer footer"
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 9vh;
+        grid-template-areas: "navbar"
+                             "header"
+                             "cartes"
+                             "masonry"
+                             "formulaire"
+                             "footer"
+    }
+    .cartes-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .carte {
+        margin-top: 5px;
+    }
+
+    .masonry {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1vh 45vh 86vh 294vh 40vh;
+        grid-template-areas: "navbar"
+                             "header"
+                             "cartes"
+                             "masonry"
+                             "formulaire"
+                             "footer"
+    }
+
+    .col-2.justify-spacearound {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+    }
+
+}
+/*
+ * Chantier 
+ * ******** */
+
+.container {
+    margin: 0 10%;
+}
+
+.row {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.col {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.w-45 {
+    width: 45%
+}
+
+.h-45 {
+    height: 45%;
+}
+
+.justify-spacearound {
+    display: grid;
+    justify-content: space-around;
+}
+
+.justify-center {
+    display: grid;
+    justify-content: center;
+}
+
+.marginl-10 {
+    margin-left: 10%;
+}
+
+.txt-center {
+    text-align: center;
+}
